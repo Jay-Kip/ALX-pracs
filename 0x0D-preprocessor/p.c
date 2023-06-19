@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define PI 1234
-#define SQR Jay
+#define SQR "Jay"
 
 int main()
 {
