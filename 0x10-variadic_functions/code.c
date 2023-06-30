@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 int add(int args, ...);
+int add2(int args, ...);
 
 int main(int argc, char *argv[])
 {
@@ -15,6 +16,23 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
+/*int add2(int args, ...)
+{
+	va_list list;
+	int sum = args;
+
+	int x = va_arg(list, int);
+
+	while (x != 0)
+	{
+		sum += x;
+		x = va_arg(list, int);
+	}
+	va_end(list);
+
+	return (sum);
+}*/
 
 int add(int args, ...)
 {
